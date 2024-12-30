@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: dim_customer_test
+      description: "test_my knowledge"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
