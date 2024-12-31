@@ -3,7 +3,7 @@ payments as (
     select * from {{ref('stg_payments')}}
 )
 select 
-    orderid
+    orderid,
     sum(amount) as total_amount
 from payments
 group by orderid
