@@ -13,5 +13,4 @@ fct_orders as (
     from orders o
     left join payments p on o.order_id = p.orderid  
 )
-
 select * from fct_orders
